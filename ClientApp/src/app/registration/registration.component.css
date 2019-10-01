@@ -1,0 +1,15 @@
+.inputClass{
+  width: 300px;
+}
+label{
+  font-weight : bold;
+}
+
+.baseClass{
+  margin-bottom: 10px;
+}
+
+.errorClass{
+  color: red;
+  font-size: 15px;
+}

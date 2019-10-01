@@ -1,0 +1,47 @@
+<h3 style="color:#27e287; text-align:center">
+  Work in Progress..!!
+</h3>
+
+<form (ngSubmit)="onSubmit(); myform.reset()" #myform="ngForm" >
+  <div class="baseClass">
+    <label for="name">
+      Name
+    </label><br />
+    <input class="inputClass" type="text" name="name" placeholder="Enter your Name here" required [(ngModel)]="schema.name" #nameCheck="ngModel" />
+    <p class="errorClass" *ngIf="!nameCheck.valid && nameCheck.touched">Required Field</p>
+  </div>
+  <div class="baseClass">
+    <label for="email">
+      Email ID
+    </label><br />
+    <input class="inputClass" type="email" name="email" placeholder="Enter your Email ID here" required [(ngModel)]="schema.email" #emailCheck="ngModel" />
+    <p class="errorClass" *ngIf="!emailCheck.valid && emailCheck.touched">Required Field</p>
+  </div>
+  <div class="baseClass">
+    <label for="phone">
+      Phone Number
+    </label><br />
+    <input class="inputClass" type="text" name="phone" placeholder="Enter your Phone Number here" required [(ngModel)]="schema.phone" #phoneCheck="ngModel" />
+    <p class="errorClass" *ngIf="!phoneCheck.valid && phoneCheck.touched">Required Field</p>
+  </div>
+  <div class="baseClass">
+    <label for="password">
+      Password
+    </label><br />
+    <input class="inputClass" type="password" name="password" placeholder="Enter your Password here" required [(ngModel)]="schema.password" #passwordCheck="ngModel"/>
+    <p class="errorClass" *ngIf="!passwordCheck.valid && passwordCheck.touched">Required Field</p>
+  </div>
+  <div class="baseClass">
+    <label for="confirmPassword">
+      Confirm Password
+    </label><br />
+    <input class="inputClass" type="password" name="confirmPassword" placeholder="Re-Enter your Password here" required [(ngModel)]="schema.confirmPassword" #confirmPasswordCheck="ngModel"  />
+    <p class="errorClass"  *ngIf="!(schema.password==schema.confirmPassword) && confirmPasswordCheck.touched">Passwords do not match!</p>
+  </div>
+  <div class="baseClass">
+    <label for="submit">
+      Submit
+    </label><br />
+    <input type="submit" name="submit" [disabled]="!(myform.form.valid && (schema.password==schema.confirmPassword))"/>
+    </div>
+</form>
