@@ -32,3 +32,4 @@ C:\Users\52131214\source\repos\AngularApplication\AngularApplication\obj\Debug\n
 C:\Users\52131214\source\repos\AngularApplication\AngularApplication\obj\Debug\netcoreapp3.0\AngularApplication.csproj.CopyComplete
 C:\Users\52131214\source\repos\AngularApplication\AngularApplication\obj\Debug\netcoreapp3.0\AngularApplication.dll
 C:\Users\52131214\source\repos\AngularApplication\AngularApplication\obj\Debug\netcoreapp3.0\AngularApplication.pdb
+C:\Users\52131214\source\repos\AngularApplication\AngularApplication\obj\Debug\netcoreapp3.0\AngularApplication.csprojAssemblyReference.cache

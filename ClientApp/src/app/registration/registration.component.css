@@ -1,3 +1,9 @@
+form{
+  position: relative;
+  left : 38%;
+  top : 20px;
+}
+
 .inputClass{
   width: 300px;
 }
